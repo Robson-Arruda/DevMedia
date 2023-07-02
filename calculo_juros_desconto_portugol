@@ -1,0 +1,24 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		real valor
+		real porcentagem
+		real juros
+		real desconto	
+
+		escreva("Informe o valor: ")
+		leia(valor)
+
+		escreva("Informe a Porcentagem: ")
+		leia(porcentagem)
+
+		juros = valor+((valor/100)*porcentagem)
+		desconto = valor-((valor/100)*porcentagem)
+
+		escreva(valor+" com "+porcentagem+"%"+" de desconto é "+desconto)
+		escreva(valor+" com "+porcentagem+"%"+" de juros é "+juros+"\n")
+		
+	}
+}
