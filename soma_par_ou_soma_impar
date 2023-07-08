@@ -1,0 +1,60 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro comeco
+		inteiro final
+		inteiro soma = 0
+		caracter resto
+
+		escreva("soma de números pares ou ímpares!! \n\n")
+		
+		escreva("Por qual número quer começar?\n")
+		leia(comeco)
+		escreva("Até qual número quer somar?\n")
+		leia(final)
+
+		escreva("Você quer somar os números pares ou ímpares desse intervalo?\n")
+		escreva("'P' --->> Par ou 'I' --->> Ímpares (letras MAIÚSCULAS)\n")
+		leia(resto)
+
+		escolha(resto){
+			caso 'P':
+				escreva("Os números pares nesse intevalo são:")
+				enquanto(comeco <= final){
+					se(comeco % 2 == 0){
+						soma = soma + comeco
+						escreva(comeco+", ")
+						comeco++
+					}
+						
+					senao{
+						comeco++
+					}
+					
+				}
+			escreva("\n\nResultado da soma deles é: "+soma)
+			pare
+			caso 'I':
+				escreva("Os números ímpares nesse intevalo são: ")
+				enquanto(comeco <= final){
+					se(comeco % 2 != 0){
+						soma = soma + comeco
+						escreva(comeco+", ")
+						comeco++
+					}
+						
+					senao{
+						comeco++
+					}
+				}
+				escreva("\n\nResultado da soma deles é: "+soma)
+			pare
+
+			caso contrario:
+				escreva("Opção Inválida, Programa Encerrado")
+				
+		}
+	}
+}
