@@ -1,0 +1,102 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter opcao
+		
+
+		escreva("Calculadora para Conversão de Unidades!!\n")
+
+		faca{		
+			escreva("\nVocê quer converter:\n")
+			escreva("1 --> Unidade de Temperatura\n")
+			escreva("2 --> unidade de Distância\n")
+			escreva("3 --> Sair\n")
+			escreva("Opcao escolhida: ")
+			leia(opcao)
+
+			escolha(opcao){
+			
+				caso '1':
+				caracter t
+
+					faca{
+						escreva("\nDigite 1 para converter Celsius em Fahrenheit\n")
+						escreva("Digite 2 para converter Farenheit em Celsius\n")
+						escreva("Digite 3 para VOLTAR ao menu anterior\n")
+						escreva("Opcao escolhida: ")
+						leia(t)
+
+						se(t == '1'){
+							real celsius
+							real fahrenheit
+							escreva("\nEntre com o valor em CELSIUS (C°):\n")
+							leia(celsius)
+
+							fahrenheit = (celsius * 1.8) + 32
+							escreva(celsius+"°C é igual a "+fahrenheit+"°F\n")
+						}
+
+						senao se(t == '2'){
+							real celsius
+							real fahrenheit
+							escreva("\nEntre com o valor em FAHRENHEIT (C°):\n")
+							leia(fahrenheit)
+
+							celsius = (fahrenheit - 32) / 1.8
+							escreva(fahrenheit+"°F é igual a "+celsius+"°C\n")
+						}
+
+						senao se(t == '3'){
+							escreva("\nOk. Voltando ao menu anterior\n")
+						}
+						senao{
+							escreva("\nOpcao inválida\n")
+						}
+				}
+				enquanto(t != '3')
+			caso '2':
+				caracter d
+				faca{
+						escreva("\nDigite 1 para converter Quilometros em Milhas\n")
+						escreva("Digite 2 para converter Milhas em Quilometros\n")
+						escreva("Digite 3 para VOLTAR ao menu anterior\n")
+						escreva("Opcao escolhida: ")
+						leia(d)
+
+						se(d == '1'){
+							real quilometro
+							real milha
+							escreva("\nEntre com o valor em Quilometros (km):\n")
+							leia(quilometro)
+
+							milha = quilometro * 0.62137
+							escreva(quilometro+"Km é igual a "+milha+"Mi\n")
+						}
+
+						senao se(d == '2'){
+							real quilometro
+							real milha
+							escreva("\nEntre com o valor em Milhas (Mi):\n")
+							leia(milha)
+
+							quilometro = milha * 1.609344
+							escreva(milha+"Mi é igual a "+quilometro+"°Km\n")
+						}
+
+						senao se(d == '3'){
+							escreva("\nOk. Voltando ao menu anterior\n")
+						}
+						senao{
+							escreva("\nOpcao inválida\n")
+						}
+				}
+				enquanto(d != '3')
+			
+			}
+		}
+		enquanto(opcao != '3')
+		
+	}
+}
