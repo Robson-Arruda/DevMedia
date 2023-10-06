@@ -1,0 +1,272 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.topo{
+    position: fixed;
+    z-index: 1;
+    background-color: #604829;
+    height: 75px;
+    width: 100%;
+}
+.menu{
+    position: absolute;
+    text-decoration: none;
+    top: 35%;
+    right: 15%;
+}
+
+.menu a{
+    text-decoration: none;
+    margin-right: 35px;
+    color: #c4a47c;
+    text-shadow: black 4px 5px 3px;
+    font-weight: bold;
+    font-family: oswald, sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 17px;
+}
+
+.menu a:hover{
+    border-bottom: 4px dotted #c4a47c;
+    text-shadow: none;
+    transition: 150ms;
+    
+}
+
+.logo img{
+    position: absolute;
+    width: 100px;
+    left: 15%;
+    top: -13px;
+}
+
+.texto{
+    padding: 80px 0;
+    background-color: #fff;
+    width: 100%;   
+
+}
+
+.texto p{
+    color: #666;
+    margin: 0 auto;
+    max-width: 1024px;
+    text-align: center;
+    font-family: lato, sans-serif;
+    line-height: 35px;   
+    padding: 0 40px;
+    letter-spacing: 0.6px; 
+    
+
+}
+
+.texto h2{
+    font-family: Oswald, sans-serif;
+    color: #c4a47c;
+    text-align: center;
+    padding: 0 0 40px 0;
+    letter-spacing: 1.5px;
+}
+.texto-baner{
+    position: absolute;
+    width: 500px;
+    background-color: #604829;
+    color: #fff;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+    font-family: fraunces;
+    font-style: italic;
+    letter-spacing: 2.3px;
+    font-weight: 350;
+    margin: 0 auto;
+
+
+}
+h1{
+    font-family: fraunces,serif;
+    color: #fff;
+    text-align: center;
+    font-size: 70px;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+
+    
+}
+
+.mapa{
+    position: absolute;
+    top: 23%;
+    right: 0;
+    left: 0;
+    margin: 0px auto 0px auto;
+
+}
+
+.contato-destaque{
+    position: absolute;
+    width: 500px;
+    background-color: #604829;
+    padding: 10px;
+    top: 10%;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 50px auto;
+    right: 0;
+    left: 0;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 2px;
+}
+
+.contato{
+    position: absolute;
+    width: 500px;
+    background-color: #604829;
+    padding: 10px;
+    bottom: 1%;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto 50px auto;
+    right: 0;
+    left: 0;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 1px;
+    line-height: 35px;
+    text-shadow: 3px 3px 5px black;
+    font-size: 17px;
+}
+
+
+.baner-05 h2{
+    position: absolute;
+    color: #fff;
+    top: 10%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    letter-spacing: 8px;
+}
+
+.lista ul {
+    margin: 0 auto;
+    width: 768px;
+    list-style: none;
+    
+}
+
+.lista li{
+    position: relative;
+    top: 120px;
+    font-family: Oswald, sans-serif;
+    
+}
+.lista li h3{
+    font-weight: bold;
+    color: #fff;
+    line-height: 45px;
+}
+
+.lista li span{
+    position: absolute;
+    font-weight: bold;
+    color: #c4a47c;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+}
+
+.lista li p{
+    color: #acacac;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 45px;
+    font-weight: 600;
+}
+
+.lista li div{
+    color: #acacac;
+    top: 50%;
+    right: 14%;
+    width: 70%;
+    height: 1px;
+    background-color: #acacac;
+    position: absolute;
+    line-height: 45px;
+}
+
+.rodape{
+    position: relative;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-family: lato, sans-serif;
+    height: 100px;
+    padding-top:30px;
+}
+
+.rodape img{
+    position: absolute;
+    width: 50px;
+    right: 35px;
+    top: -20px;
+}
+
+.rodape span{
+    color: #c4a47c;
+    font-weight: bold;
+}
+.baner-01{
+    height: 100vh;
+    background-image: url(../images/parallax-imagem1.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.baner-02{
+    position: relative;
+    height: 50vh;
+    background-image: url(../images/parallax-imagem2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.baner-03{
+    position: relative;
+    height: 50vh;
+    background-image: url(../images/parallax-imagem3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.baner-04{
+    position: relative;
+    height: 139vh;
+    background-image: url(../images/parallax-imagem4.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.baner-05{
+    position: relative;
+    height: 85vh;
+    background-image: url(../images/cafeteria.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
