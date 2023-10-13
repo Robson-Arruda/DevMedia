@@ -1,0 +1,388 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins ;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Início Topo */
+.topo{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 35px 0px;
+    background-color: #fff;
+    position: relative;
+}
+.logo{
+    position: relative;
+    width: 80px;
+    top: 5px;
+}
+
+.texto-logo{
+    position: absolute;
+    left: 100px;
+    bottom:37px;
+    line-height: 40px;
+}
+
+.texto-logo h1{
+    font-size: 32px;
+    color: #000;
+}
+
+.texto-logo p{
+    color: #2f86d6;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.menu{
+    position: absolute;
+    color: #233032;
+    right: 60px;
+    top: 37%;
+}
+.menu a{
+    text-decoration: none;
+    padding: 5px 15px;
+    font-size: 18px;
+    color: #233032;
+}
+
+.menu a:hover{
+    font-weight: 500;
+    box-shadow: 0px 0px 5px 2px #2f86d6;
+    border-radius: 10px;
+    font-size: 19px;
+    transition: 250ms;
+}
+
+/* Final Topo */
+
+/* Banner inicio*/
+
+.banner{
+    background-color: #2f86d6;
+    height: 500px;   
+}
+.banner-conteudo{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.texto-banner{
+    position: absolute;
+    color: #fff;
+    top: 100px;
+    width: 480px;
+}
+.texto-banner p{
+    font-size: 16px;
+    margin: 25px 0 25px 0;
+}
+
+.texto-banner h2{
+    font-size: 28px;
+}
+
+.img-banner img{
+    width: 100%;
+}
+.img-banner{
+    top: 40px;
+    position: absolute;
+    right: 0;
+    width: 500px;
+    
+}
+/* Banner fim */
+
+/* Anuncio - 1 inicio*/
+
+.anuncio-1{
+    background-color: #233032;
+    width: 100%;
+    height: 120px;
+    
+}
+.anuncio-conteudo{
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+    top: 20px;
+}
+
+.texto-anuncio{
+    position: absolute;
+    color: #fff;
+}
+.texto-anuncio p{
+    font-size: 16px;
+}
+.texto-anuncio h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.botao-anuncio-1{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: #2f86d6;
+    padding: 10px;
+    border-radius: 4px;
+}
+.botao-anuncio-1 a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.botao-anuncio-1 img{
+    position: relative;
+    top: 4px;
+    right: 3px
+}
+
+.botao-anuncio-1:hover{
+    background-color: #a89f9f;
+    transition: 250ms;
+
+}
+/* auncio 1 final*/
+
+/*Informação Início*/
+#informacao{
+    width: 100%;
+    background-color: #fff;
+    height: 500px;
+}
+
+#informacao h3{
+    width: 1024px;
+    font-size: 32px;
+    text-align: center;
+    padding: 35px;
+    margin: 45px auto 0 auto;
+}
+#informacao span{
+    color: #2f86d6;
+}
+
+.banner-informacao{
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    top: -90px;  
+}
+
+.banner-informacao p{
+    width: 280px;
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+}
+
+.banner-informacao h4{
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px ;
+}
+
+.informacao-1{
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+.informacao-2{
+    position: absolute;
+    top: 100px;
+    left: 35%;
+}
+
+.informacao-3{
+    position: absolute;
+    top: 100px;
+    right:0;
+}
+.informacao-img{
+    width: 100px;
+    margin: 0 auto;
+    
+}
+.informacao-img img{
+    width: 100%;
+    
+}
+/*------//-----Informação final-----//------*/
+
+/*------//-----Tabela Inicio-----//------*/
+
+#plano{
+    width: 100%;
+    background-color: #f6f6f6;
+    height: 780px;
+}
+
+#plano span{
+    color: #2f86d6;
+}
+.introducao{
+ font-size: 32px;
+ color: #000;
+ width: 1024px;
+ margin: 0 auto 80px auto;
+ padding-top: 55px;
+}
+
+.tabela-plano{
+    width: 1024px;
+    margin: 0 auto;
+    border: 1px solid #f1f3f7;
+    background-color: #f1f3f7;
+    box-shadow: #2f86d6 0 0 25px 20px;
+}
+
+.tabela-plano thead h3{
+    padding-top: 15px ;
+    font-size: 18px;
+    color: #000;
+}
+
+.tabela-plano thead img{
+    width: 130px;
+    padding: 10px;
+}
+
+.tabela-plano thead tr{
+    background-color: #fff;
+}
+
+.tabela-plano thead p{
+    padding: 5px 50px 25px 50px;
+    color: #a89f9f;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.tabela-plano tbody td{
+    text-align: center;
+    padding: 10px;
+    font-weight: 500;
+}
+
+.impar{
+    background-color: #f6f6f6;
+}
+.par{
+    background-color: #fff;
+}
+/*------//-----Tabela Fim----//------*/
+
+/*------//-----Anuncio-2 inicio ----//------*/
+
+.anuncio-2{
+    position: relative;
+    background-color: #2f86d6;
+    width: 100%;
+    height: 120px;
+}
+
+.anuncio-2 h3{
+    width: 550px;
+}
+
+.botao-anuncio-2{
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background-color: #233032;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.botao-anuncio-2 a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao-anuncio-2 img{
+    position: relative;
+    top: 4px;
+    right: 3px
+}
+.botao-anuncio-2:hover{
+    background-color: #a89f9f;
+    transition: 250ms;
+
+}
+/*------//-----Anuncio-2 Fim ----//------*/
+
+/*------//-----Rodapé Inicio-----//------*/
+
+.rodape{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 35px 0px;
+    background-color: #fff;
+    position: relative;
+}
+
+
+.logo-rodape{
+    position: relative;
+    width: 80px;
+    top: 5px;
+    left: 35%;
+    margin-bottom: 45px;
+}
+
+.texto-logo-rodape{
+    position: absolute;
+    left:45%;
+    top:37px;
+    line-height: 40px;
+}
+
+.texto-logo-rodape h1{
+    font-size: 32px;
+    color: #000;
+}
+.texto-logo-rodape p{
+    color: #2f86d6;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.rodape p{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.ultima-linha{
+    background-color: #f1f3f7;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.ultima-linha p{
+    padding: 45px 0 35px 0;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+.ultima-linha span{
+    color: #2f86d6;
+}
