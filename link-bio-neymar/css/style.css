@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    font-family: 'ysabeau Infant',sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner a img{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 3%;
+    top: 20%;
+}
+
+.banner a{
+    color: #fff;
+    width: 600px;
+    height: 40px;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #000000a2;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a:hover{
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+    transition: 390ms;
+}
+
+
+.titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-bottom: 20px;   
+}
+
+.titulo h1{
+    color: #fff;
+    text-shadow: 4px 4px 3px #000;
+    font-size: 50px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.titulo h1::before{
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 5px;
+    background: linear-gradient(90deg,#ffdf00, #009c3b);
+    bottom: 2px;
+    left: 4px;
+    border-radius: 4px;
+
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.logo img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+.logo::before{
+    content: "";
+    position: absolute;
+    width: 215px;
+    height: 215px;
+    background: linear-gradient(90deg,#ffdf00, #009c3b);
+    z-index: -1;
+    border-radius: 100%;
+}
+
+.link{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+
+.estatistica{
+    font-family: 'Montserrat',sans-serif;
+    background-image: url(../assets/img/imagem-de-fundo.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position:center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.estatistica h2{
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 3px 3px #000;
+}
+
+tbody tr td img{
+    width: 30px;
+}
+
+.tabela th{
+    font-size: 26px;
+    background-color: #000000cc;
+    color: #fff;
+    text-shadow: 2px 2px 1px #000;
+}
+
+.tabela th, tr, td{
+    padding: 20px;
+}
+
+
+.tabela tbody td:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+  
+.tabela tbody tr:nth-of-type(odd) {
+    background-color: #ffffffcc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+  
+.tabela tbody tr:nth-of-type(even) {
+    background-color: #000000cc;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
