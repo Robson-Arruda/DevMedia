@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    color: #0000008c;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*-- TOPO E MENU DE NAVEGAÇÃO --*/
+
+.topo {
+    background-color: rgb(69, 176, 190);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.topo .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.topo ul a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.topo ul {
+    list-style: none;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo ul li a:hover {
+    color: #0000008c;
+    transition: 100ms;
+    font-size: 20px;
+}
+
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/*-- BANNER E CONTEÚDO DO BANNER --*/
+
+.banner {
+    width: 100%;
+    height: 500px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../img/recepcao2.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+    position: relative;
+
+}
+
+.banner h1 {
+    position: relative;
+    padding-top: 150px;
+    left: 20px;
+    top: 100px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+/*--  Seção Sobre --*/
+#sobre {
+    padding-top: 115px;
+}
+
+.sobre-conteudo h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.sobre-conteudo p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto 45px auto;
+    width: 700px;
+    line-height: 25px;
+}
+
+.sobre-conteudo2 {
+    margin: 35px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.sobre-lista {
+    line-height: 25px;
+    font-size: 18px;
+    margin-left: 45px;
+}
+
+.sobre-lista h3 {
+    margin: 0 0 25px -50px;
+    font-weight: lighter;
+    font-size: 19px;
+}
+
+.medico {
+    width: 250px;
+}
+
+.sobre-conteudo h3 {
+    text-align: center;
+    margin: 50px 0 20px 0;
+}
+
+/*--  Seção Sobre IMAGENS --*/
+
+.sobre-imagens img {
+    width: 300px;
+    border-radius: 5px 5px 0 0;
+}
+
+.sobre-imagens {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 35px auto;
+
+}
+
+.sobre-imagens figure {
+    box-shadow: 0 0 15px #0000008c;
+    border-radius: 5px;
+}
+
+figcaption {
+    padding: 15px;
+    text-align: center;
+}
+
+.sobre-imagens img:hover {
+    width: 310px;
+    transition: 350ms;
+}
+
+/*--  Seção Sobre BOTÃO --*/
+
+.sobre-link {
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.sobre-link a {
+    color: #fff;
+    background-color: rgb(69, 176, 190);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.sobre-link a:hover {
+    background-color: rgb(37, 115, 126);
+    transition: 250ms;
+    padding: 14px;
+}
+
+/*--  Seção Sobre CONTATO --*/
+
+.contato {
+    text-align: center;
+    max-width: 770px;
+    font-size: 18px;
+    padding-top: 100px;
+}
+
+.contato p {
+    padding: 20px;
+}
+
+.mapa {
+    max-width: 1024px;
+    margin: 0 auto 35px auto;
+}
+
+/*--  Seção Sobre FOOTER --*/
+
+footer {
+    background-color: rgb(37, 115, 126);
+    padding-bottom: 45px;
+}
+
+.logo-footer {
+    text-align: center;
+    padding: 15px;
+}
+
+address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    line-height: 45px;
+    font-style: normal;
+}
+
+
+
+/*---------------  TRATAMENTO RESPONSIVO-------------- --*/
+
+/*--  ATÉ 425PX --*/
+
+@media screen and (max-width: 600px) {
+
+    /*--  TOPO max 425px --*/
+    .topo .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .topo {
+        height: 100px;
+    }
+
+    .topo ul {
+        border-top: 1px solid rgb(37, 115, 126);
+        padding-top: 10px;
+    }
+
+    .topo ul a {
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 150px;
+        margin: -10px auto;
+    }
+
+    /*--  BANNER max 425px --*/
+
+    .banner {
+        height: 380px;
+    }
+
+    .banner h1 {
+        position: relative;
+        padding-top: 150px;
+        left: 20px;
+        top: 30px;
+        color: #fff;
+        font-size: 23px;
+        font-weight: 100;
+        line-height: 45px;
+    }
+
+    .container{
+        max-width: 380px;
+        font-size: 15px;
+    }
+
+    /*--  SEÇÃO SOBRE max 425px --*/
+    .sobre-conteudo{
+        margin-top: -12px;
+    }
+    .sobre-conteudo h2{
+        font-size: 25px;
+    }
+    .medico{
+        display: none;
+    }
+}
