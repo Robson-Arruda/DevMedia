@@ -275,10 +275,6 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
         line-height: 45px;
     }
 
-    .container{
-        max-width: 380px;
-        font-size: 15px;
-    }
 
     /*--  SEÇÃO SOBRE max 425px --*/
     .sobre-conteudo{
