@@ -259,8 +259,9 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 
     /*--  BANNER max 425px --*/
 
-    .banner {
+    .banner{
         height: 380px;
+        width: 100%;
     }
 
     .banner h1 {
