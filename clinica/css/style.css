@@ -230,9 +230,6 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 @media screen and (max-width: 425px) {
 
     /*--  TOPO max 425px --*/
-    header{
-        width: 100%;
-    }
     .topo .container {
         display: flex;
         align-items: center;
@@ -240,6 +237,7 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
+        box-sizing: border-box;
     }
 
     .topo ul {
