@@ -237,6 +237,7 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
         justify-content: space-between;
         flex-direction: column;
         width: 100%;
+        padding: 10px;
     }
 
     .topo ul {
