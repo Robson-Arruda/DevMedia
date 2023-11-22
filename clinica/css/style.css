@@ -274,6 +274,7 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
         line-height: 45px;
     }
     .container{
+        width: 100%;
         margin: 0 auto;
     }
 
