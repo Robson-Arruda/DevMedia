@@ -285,6 +285,8 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
     /*--  SEÇÃO SOBRE max 425px --*/
     .sobre-conteudo{
         margin-top: -12px;
+        text-align: center;
+        box-sizing: border-box;
     }
     .sobre-conteudo h2{
         font-size: 25px;
