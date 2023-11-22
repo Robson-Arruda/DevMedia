@@ -247,6 +247,8 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
     .topo ul {
         border-top: 1px solid rgb(37, 115, 126);
         padding-top: 10px;
+        max-width: 380px;
+        margin: 0 auto;
     }
 
     .topo ul a {
@@ -277,6 +279,7 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
     }
     .container{
         width: 380px;
+        margin: 0 auto;
     }
 
     /*--  SEÇÃO SOBRE max 425px --*/
