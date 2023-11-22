@@ -230,9 +230,7 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 @media screen and (max-width: 425px) {
 
     /*--  TOPO max 425px --*/
-    header{
-        width: 100%;
-    }
+   
     .topo .container {
         display: flex;
         align-items: center;
