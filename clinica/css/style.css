@@ -14,7 +14,7 @@ html {
 
 .topo {
     background-color: rgb(69, 176, 190);
-    width: 100%;
+    width: 100vw;
     height: 100px;
     position: fixed;
     z-index: 1;
@@ -230,10 +230,6 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 @media screen and (max-width: 425px) {
 
     /*--  TOPO max 425px --*/
-    .topo{
-        width: 100%;
-        position: fixed;
-    }
     .topo .container {
         display: flex;
         align-items: center;
@@ -275,7 +271,7 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
         line-height: 45px;
     }
     .container{
-        width: 380px;
+        width: 425px;
         margin: 0 auto;
     }
 
