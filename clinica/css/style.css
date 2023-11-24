@@ -369,6 +369,10 @@ and (max-width: 425px) {
 and (min-width: 426px)
 and (max-width: 768px){
 
+    main{
+        overflow: hidden;
+    }
+
     .medico{
         display: none;
     }
