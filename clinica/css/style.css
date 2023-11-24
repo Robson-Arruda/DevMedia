@@ -227,13 +227,20 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 
 /*--  ATÉ 425PX --*/
 
-@media screen and (max-width: 425px) {
+@media screen 
+and (max-width: 425px) {
 
     /*--  TOPO max 425px --*/
     main {
         width: 100%;
         box-sizing: border-box;
         padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    .topo{
+        height: 85px;
     }
     .topo .container {
         display: flex;
@@ -248,33 +255,33 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
     .topo ul {
         border-top: 1px solid rgb(37, 115, 126);
         padding-top: 10px;
-        max-width: 380px;
         margin: 0 auto;
     }
 
     .topo ul a {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .logo img {
-        width: 150px;
-        margin: -10px auto;
+        width: 110px;
+        margin: -9px auto;
+        padding: 10px 0 0 0;
     }
 
     /*--  BANNER max 425px --*/
 
     .banner{
-        height: 200px;
+        height: 220px;
         width: 100%;
     }
 
     .banner h1 {
         position: relative;
-        padding-top: 150px;
+        padding-top: 80px;
         left: 20px;
         top: 30px;
         color: #fff;
-        font-size: 23px;
+        font-size: 18px;
         font-weight: 100;
         line-height: 45px;
     }
@@ -284,21 +291,91 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 
     /*--  SEÇÃO SOBRE max 425px --*/
     .sobre-conteudo{
-        margin-top: -12px;
+        margin-top: -25px;
         text-align: center;
         box-sizing: border-box;
         width: 100%;
     }
     .sobre-conteudo h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .sobre-conteudo p{
-        width: 100%;
-        padding: 0 25px 0 25px;
+        padding: 0 8px 30px 8px;
         text-align: center;
         margin: 0 auto;
+        font-size: 15px;
+        line-height: 19px;
     }
     .medico{
         display: none;
     }
+
+    .sobre-lista{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .sobre-lista h3{
+        font-size: 15px;
+        text-align: center;
+        padding: 0 8px 0 8px;
+    }
+
+    .sobre-conteudo h3{
+        font-size: 19px;
+    }
+
+    .sobre-imagens{
+        justify-content: center;
+    }
+
+    .sobre-link{
+        margin-top: 45px;
+    }
+
+    .contato{
+        margin-top: -12px;
+    }
+    .contato p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+ /*--  FOOTER max 425px --*/
+
+    footer{
+        padding: 0 10px 0 10px;
+        font-size: 14px;
+    }
+
+    footer img{
+        width: 120px;
+    }
+
+    address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
+        line-height: 20px;
+        padding-bottom: 10px;
+    }
+
+    address a{
+        margin-bottom: 5px;
+        display: block;
+    }
+
+}
+
+/*------ 426PX até 768px ------*/
+@media screen
+and (min-width: 426px)
+and (max-width: 768px){
+
+    .medico{
+        display: none;
+    }
+
+    .sobre-imagens{
+        justify-content: center;
+    }
+
+
 }
