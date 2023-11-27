@@ -281,15 +281,15 @@ and (max-width: 425px) {
         width: 100%;
     }
 
-    .banner h1 {
+.banner h1 {
         position: relative;
         padding-top: 80px;
-        left: 20px;
+        left: 10px;
         top: 30px;
         color: #fff;
-        font-size: 18px;
+        font-size: 17px;
         font-weight: 100;
-        line-height: 45px;
+        line-height: 40px;
     }
     .container{
         margin: 0 auto;
