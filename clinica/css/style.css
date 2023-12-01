@@ -16,7 +16,6 @@ html {
 .topo {
     background-color: rgb(69, 176, 190);
     width: 100vw;
-    height: 100px;
     position: fixed;
     z-index: 1;
 }
@@ -26,13 +25,14 @@ html {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    height: 85px;
 }
 
 .topo ul a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .topo ul {
@@ -233,10 +233,10 @@ address, .footer-conteudo, .footer-conteudo a, .footer-conteudo p {
 and (max-width: 425px) {
 
     /*--  TOPO max 425px --*/
+    
     ::-webkit-scrollbar {
         width: 0px;
     }
-
     main {
         width: 100%;
         box-sizing: border-box;
@@ -258,7 +258,7 @@ and (max-width: 425px) {
         box-sizing: border-box;
     }
 
-   .topo ul {
+    .topo ul {
         border-top: 1px solid rgb(37, 115, 126);
         padding:10px 0 0 0;
         width: 100%;
@@ -281,7 +281,7 @@ and (max-width: 425px) {
         width: 100%;
     }
 
-.banner h1 {
+    .banner h1 {
         position: relative;
         padding-top: 80px;
         left: 10px;
@@ -391,5 +391,78 @@ and (max-width: 768px){
         justify-content: center;
     }
 
+
+}
+
+/*----------------------- Página Especialidades -----------------------*/
+
+.link-especialidades{
+    width: 1024px;
+    margin: 0 auto;
+    padding: 105px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+.link-especialidades a{
+    border-bottom: 2px solid rgb(69, 176, 190);
+    text-decoration: none;
+    color: rgb(17, 17, 20);
+    font-size: 18px;
+    margin: 0 10px;
+    
+}
+
+.link-especialidades a:hover{
+    color: #0000008c;
+    border-bottom: 2px solid rgb(37, 115, 126);
+    text-shadow: 0 0 3px #0000008c;
+    transition: 250ms;
+
+}
+
+.conteudo{
+    margin: 0 auto;
+    text-align: center;
+    width: 1024px;
+}
+.conteudo h3{
+    padding-top: 90px;
+}
+.conteudo p{
+    width: 600px;
+    margin: 20px auto;  
+}
+
+.horario{
+    display: flex;
+    width: 1024px;
+    margin: 0 auto;
+}
+.horario img{
+    width: 350px;
+}
+
+.tabela{
+    height: 200px;
+
+}
+
+table{
+    border-collapse: collapse;
+    text-align: left;
+    width: 674px;
+    height: 250px;
+}
+
+table thead{
+    background-color: rgb(69, 176, 190);
+}
+
+table thead th{
+    color: #fff;
+    padding: 10px 10px;
 
 }
