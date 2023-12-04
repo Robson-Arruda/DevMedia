@@ -246,7 +246,7 @@ and (max-width: 425px) {
     }
 
     .topo{
-        height: 85px;
+        height: 90px;
     }
     .topo .container {
         display: flex;
@@ -258,7 +258,7 @@ and (max-width: 425px) {
         box-sizing: border-box;
     }
 
-    .topo ul {
+    .topo nav ul {
         border-top: 1px solid rgb(37, 115, 126);
         padding:10px 0 0 0;
         width: 100%;
@@ -393,15 +393,17 @@ and (max-width: 768px){
 
 
 }
-
 /*----------------------- Página Especialidades -----------------------*/
 
-.link-especialidades{
-    width: 1024px;
+/*---------links -------*/
+.link-especialidades nav{
+    max-width: 1024px;
     margin: 0 auto;
     padding: 105px 0 30px 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     
 
     
@@ -423,6 +425,7 @@ and (max-width: 768px){
 
 }
 
+/*---------classe conteudo -------*/
 .conteudo{
     margin: 0 auto;
     text-align: center;
@@ -432,29 +435,29 @@ and (max-width: 768px){
     padding-top: 90px;
 }
 .conteudo p{
-    width: 600px;
+    max-width: 600px;
     margin: 20px auto;  
 }
+
+/*---------classe Horário -------*/
 
 .horario{
     display: flex;
     width: 1024px;
+    height: 200px;
     margin: 0 auto;
 }
 .horario img{
-    width: 350px;
+    width: 300px;
 }
 
-.tabela{
-    height: 200px;
-
-}
+/*---------Tabelas-------*/
 
 table{
     border-collapse: collapse;
     text-align: left;
     width: 674px;
-    height: 250px;
+    height: 200px;
 }
 
 table thead{
@@ -463,6 +466,94 @@ table thead{
 
 table thead th{
     color: #fff;
-    padding: 10px 10px;
+    padding: 10px;
 
+}
+
+table tbody td{
+    padding: 10px;
+}
+
+table tbody tr{
+    background-color: #ececec;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #c0c0c0;
+}
+
+/*---------adaptando imagem ID fisioterapia, pois a imagem tem proporções diferentes-------*/
+
+#fisioterapia .horario{
+    height: 350px;
+}
+
+#fisioterapia table{
+    height: 300px;
+}
+
+/*------------------- Responsíel da Página Especialidades -----------------*/
+
+/*---------de 320px a 425px-------*/
+
+@media only screen 
+and (max-width: 425px) {
+
+    .link-especialidades nav a{
+        font-size: 15px;
+    }
+
+    figure img{
+        display: none;
+    }
+
+    .conteudo{
+        width: 100%;
+        padding: 0 10px;
+        font-size: 15px;
+    }
+    .conteudo h3{
+        font-size: 17px;
+    }
+
+    table{
+        font-size: 15px;
+        width: 100vw;
+    }
+}
+
+@media only screen 
+and (min-width: 426px)
+and (max-width: 768px){
+
+    .link-especialidades nav a{
+        font-size: 15px;
+    }
+
+    figure img{
+        display: none;
+    }
+
+    .conteudo{
+        width: 100%;
+        padding: 0 10px;
+        font-size: 15px;
+        
+    }
+    .conteudo h3{
+        font-size: 17px;
+    }
+
+    .horario{
+        font-size: 15px;
+        max-width: 90%;
+        
+    }
+    .tabela{
+        max-width: 100%;
+    }
+    table{
+        max-width: 100%;
+        margin: 0 auto;
+    }
 }
